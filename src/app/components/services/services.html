@@ -1,0 +1,20 @@
+<section
+  fxLayout="row wrap"
+  fxLayoutGap="24px"
+  fxLayoutAlign="center start"
+  class="services-container"
+>
+  <h2>Our Services</h2>
+  <div class="card-grid">
+    <a
+      *ngFor="let service of services"
+      [routerLink]="service.link"
+      class="card-link"
+      ><mat-card class="service-card">
+        <mat-icon>{{ service.icon }}</mat-icon>
+        <h3>{{ service.title }}</h3>
+        <p>{{ service.description }}</p>
+      </mat-card></a
+    >
+  </div>
+</section>

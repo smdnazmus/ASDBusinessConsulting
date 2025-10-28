@@ -1,0 +1,70 @@
+.footer {
+  background: #1a237e;
+  color: white;
+  padding: 24px 32px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.footer-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+}
+
+.company-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.footer-info {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.footer-block {
+  min-width: 300px;
+}
+
+.footer-info p,
+.footer-info span {
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+mat-icon {
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  .footer-info {
+    padding: 0 12px;
+  }
+
+  .footer-block {
+    margin-bottom: 16px;
+    text-align: left; /* Reset alignment */
+  }
+
+  .footer-block [fxLayoutAlign] {
+    justify-content: flex-start !important;
+  }
+
+  .company-name {
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+
+  .footer-logo {
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+.contact-right {
+  margin-left: auto;
+}

@@ -1,0 +1,16 @@
+.contact-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.message-field {
+  width: 100%;
+  display: block;
+}

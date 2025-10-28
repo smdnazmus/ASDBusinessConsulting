@@ -1,0 +1,67 @@
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo_img {
+  height: 40px;
+  margin-right: 8px;
+}
+
+.logo-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(83, 38, 189);
+}
+
+.spacer {
+  flex: 1;
+}
+
+.mobile-only {
+  display: none;
+}
+
+.desktop-only {
+  display: flex;
+}
+
+mat-toolbar {
+  background-color: aqua;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.nav-button {
+  font-size: 1.1rem; /* Larger text */
+  padding: 12px 24px; /* More clickable space */
+  min-height: 48px; /* Consistent height */
+  font-weight: 500; /* Optional: bolder look */
+}
+
+.active-link {
+  background-color: #512da8; /* Deep purple or your brand color */
+  color: white;
+  border-radius: 4px;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .mobile-only {
+    display: block;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .nav-button {
+    font-size: 1rem;
+    padding: 10px 16px;
+  }
+}

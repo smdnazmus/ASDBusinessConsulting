@@ -1,0 +1,6 @@
+.hero {
+  background: url("/assets/hero-bg.jpg") center/cover no-repeat;
+  color: rgb(242, 242, 245);
+  text-align: center;
+  padding: 200px 30px;
+}

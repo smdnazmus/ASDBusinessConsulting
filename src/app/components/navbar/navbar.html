@@ -1,0 +1,57 @@
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="over">
+    <a
+      mat-button
+      class="nav-button"
+      routerLink="/"
+      routerLinkActive="active-link"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Home</a
+    >
+    <a
+      mat-button
+      class="nav-button"
+      routerLink="/about"
+      routerLinkActive="active-link"
+      >About</a
+    >
+    <a
+      mat-button
+      class="nav-button"
+      routerLink="/services"
+      routerLinkActive="active-link"
+      >Services</a
+    >
+    <a
+      mat-button
+      class="nav-button"
+      routerLink="/contact"
+      routerLinkActive="active-link"
+      >Contact</a
+    >
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button mat-icon-button (click)="sidenav.toggle()" class="mobile-only">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <div class="logo-container">
+        <img
+          src="assets/logo.jpg"
+          alt="ASD Business Associates Logo"
+          class="logo_img"
+        />
+        <span class="logo-text">ASD Business Associates</span>
+      </div>
+
+      <span class="spacer"></span>
+      <nav class="desktop-only" fxLayout="row" fxLayoutGap="16px">
+        <a mat-button class="nav-button" routerLink="/">Home</a>
+        <a mat-button class="nav-button" routerLink="/about">About</a>
+        <a mat-button class="nav-button" routerLink="/services">Services</a>
+        <a mat-button class="nav-button" routerLink="/contact">Contact</a>
+      </nav>
+    </mat-toolbar>
+  </mat-sidenav-content>
+</mat-sidenav-container>
